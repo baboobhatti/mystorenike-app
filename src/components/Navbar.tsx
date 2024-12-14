@@ -1,11 +1,8 @@
-'use client'
-import { useState } from 'react';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Navbar() {
-const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="bg-slate-50">
       <div className="flex justify-between items-center h-12 px-4 md:px-10">
