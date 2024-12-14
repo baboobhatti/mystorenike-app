@@ -54,7 +54,7 @@ export default function Home() {
             <p>Nike Air Max 97 SE</p>
             <p>Rs. 16995</p>
              </div>
-             <p className='text-gray-500'>Men's Shoes</p>
+             <p className='text-gray-500'>Mens Shoes</p>
           </div>
           </div>
           
@@ -67,7 +67,7 @@ export default function Home() {
             <p>Nike Air Max 97 SE</p>
             <p>Rs. 16995</p>
              </div>
-             <p className='text-gray-500'>Men's Shoes</p>
+             <p className='text-gray-500'>Female Shoes</p>
           </div>
           </div>
           
@@ -79,7 +79,7 @@ export default function Home() {
             <p>Nike Air Max 97 SE</p>
             <p>Rs. 16995</p>
              </div>
-             <p className='text-gray-500'>Men's Shoes</p>
+             <p className='text-gray-500'>Mens Shoes</p>
           </div>
           </div>
           </div>
@@ -115,7 +115,7 @@ export default function Home() {
         <div  className="mx-auto flex flex-col gap-2 ns:gap-3 ns:flex-row">
         <div className="ns:w-6/12">
           <div className='flex gap-1 items-center justify-center mb-2'>
-          <div className='text-xs mr-4 font-semibold ns:mr-0'><p>Shop Men's</p></div>
+          <div className='text-xs mr-4 font-semibold ns:mr-0'><p>Shop Mens</p></div>
            <div className='hidden ns:block bg-gray-100 p-1 rounded-full'><Image className="" src='/images/back48.png' alt='photo' width={10} height={10}/></div>
            <div className='hidden ns:block bg-gray-100 p-1 rounded-full'><Image className="" src='/images/more48.png' alt='photo' width={10} height={10}/></div>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
             <p>Nike Air Max 97 SE</p>
             <p>Rs. 16995</p>
              </div>
-             <p className='text-gray-500'>Men's Shoes</p>
+             <p className='text-gray-500'>Mens Shoes</p>
           </div>
            </div>
            <div className=""><Image className="" src='/images/lowertrnk2.png' alt='photo' width={500} height={500}/>
@@ -135,7 +135,7 @@ export default function Home() {
             <p>Nike Air Max 97 SE</p>
             <p>Rs. 16995</p>
              </div>
-             <p className='text-gray-500'>Men's Shoes</p>
+             <p className='text-gray-500'>Mens Shoes</p>
           </div>
            </div> 
           </div>
@@ -148,7 +148,7 @@ export default function Home() {
 
       <div className="ns:w-6/12">
           <div className='flex gap-1 items-center justify-center mb-2'>
-          <div className='text-xs mr-4 font-semibold ns:mr-0'><p>Shop Women's</p></div>
+          <div className='text-xs mr-4 font-semibold ns:mr-0'><p>Shop Womens</p></div>
            <div className='hidden ns:block bg-gray-100 p-1 rounded-full'><Image className="" src='/images/back48.png' alt='photo' width={10} height={10}/></div>
            <div className='hidden ns:block bg-gray-100 p-1 rounded-full'><Image className="" src='/images/more48.png' alt='photo' width={10} height={10}/></div>
           </div>
@@ -159,7 +159,7 @@ export default function Home() {
             <p>Nike Air Max 97 SE</p>
             <p>Rs. 16995</p>
              </div>
-             <p className='text-gray-500'>Men's Shoes</p>
+             <p className='text-gray-500'>Mens Shoes</p>
           </div>
            </div>
            <div className=""><Image className="" src='/images/lowertrnk2.png' alt='photo' width={500} height={500}/>
@@ -168,7 +168,7 @@ export default function Home() {
             <p>Nike Air Max 97 SE</p>
             <p>Rs. 16995</p>
              </div>
-             <p className='text-gray-500'>Men's Shoes</p>
+             <p className='text-gray-500'>Mens Shoes</p>
           </div>
            </div> 
           </div>
@@ -208,14 +208,14 @@ export default function Home() {
             {/* cart-1 */}
           <div className='w-[92%] h-[230] mx-auto ns:w-4/12 ns:h-[200] sm:w-4/12 sm:h-[230] md:h-[280] lg:h-[340] 2xl:h-[420]'>
           <Image className="w-full h-full" src='/images/mens.png' alt='photo' width={500} height={300}/>
-          <button className="relative bottom-14 left-6 bg-white rounded-full px-3 py-1" type="button">Men's</button>
+          <button className="relative bottom-14 left-6 bg-white rounded-full px-3 py-1" type="button">Mens</button>
           </div>
           
           
           {/* cart-2 */}
           <div  className='w-[95%] h-[260] mx-auto hidden ns:block ns:w-4/12 ns:h-[200] sm:w-4/12 sm:h-[230] md:h-[280] lg:h-[340] 2xl:h-[420]'>
           <Image className="w-full h-full" src='/images/womens.png' alt='photo' width={500} height={300}/>
-          <button className="relative bottom-14 left-6 bg-white rounded-full px-3 py-1" type="button">Women's</button>
+          <button className="relative bottom-14 left-6 bg-white rounded-full px-3 py-1" type="button">Womens</button>
           </div>
           
           {/* cart-3 */}
