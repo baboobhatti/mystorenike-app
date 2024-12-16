@@ -42,10 +42,10 @@ export default function Home() {
         </div>
 
         {/* 02 */}
-        <div className='ns:grid ns:grid-cols-3 ns:gap-3'>
+        <div className='grid ns:grid-cols-3 ns:gap-3'>
           {/* cart-1 */}
           <div className='mb-4 ns:mb-1'>
-            <Image className="w-full" src='/images/boot1.png' alt='photo' width={500} height={500} />
+            <Image className="" src='/images/boot1.png' alt='photo' width={500} height={500} />
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm  font-semibold'>
               <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
                 <p>Nike Air Max 97 SE</p>
@@ -57,7 +57,7 @@ export default function Home() {
 
           {/* cart-2 */}
           <div className='mb-4 ns:mb-1'>
-            <Image className="w-full" src='/images/boot2.png' alt='photo' width={500} height={500} />
+            <Image className="" src='/images/boot2.png' alt='photo' width={500} height={500} />
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm font-semibold'>
               <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
                 <p>Nike Air Max 97 SE</p>
@@ -69,7 +69,7 @@ export default function Home() {
 
           {/* cart-3 */}
           <div className='mb-4 ns:mb-1'>
-            <Image className="w-full" src='/images/boot3.png' alt='photo' width={500} height={500} />
+            <Image className="" src='/images/boot3.png' alt='photo' width={500} height={500}/>
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm font-semibold'>
               <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
                 <p>Nike Air Max 97 SE</p>
