@@ -36,15 +36,15 @@ export default function Home() {
           <div className='ml-4 text-xl font-semibold'><p>Best of Air Max</p></div>
           <div className='flex py-2 gap-2 items-center mr-1'>
             <div className='text-sm mr-6  font-semibold ns:mr-0'><p>Shop</p></div>
-            <div className='hidden ns:block bg-gray-100 p-1 rounded-full'><Image className="" src='/images/back48.png' alt='photo' width={10} height={10} /></div>
-            <div className='hidden ns:block bg-gray-200 p-1 rounded-full'><Image className="" src='/images/more48.png' alt='photo' width={10} height={10} /></div>
+            <div className='bg-gray-100 p-1 rounded-full'><Image className="" src='/images/back48.png' alt='photo' width={10} height={10} /></div>
+            <div className='bg-gray-200 p-1 rounded-full'><Image className="" src='/images/more48.png' alt='photo' width={10} height={10} /></div>
           </div>
         </div>
 
         {/* 02 */}
-        <div className='ns:flex ns:gap-1'>
+        <div className='ns:flex ns:flex-row ns:gap-1'>
           {/* cart-1 */}
-          <div className='mb-4 ns:mb-1 ns:w-4/12'>
+          <div className='mb-4 ns:mb-1'>
             <Image className="w-full" src='/images/boot1.png' alt='photo' width={500} height={500} />
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm  font-semibold'>
               <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
 
           {/* cart-2 */}
-          <div className='mb-4 ns:mb-1 ns:w-4/12'>
+          <div className='mb-4 ns:mb-1'>
             <Image className="w-full" src='/images/boot2.png' alt='photo' width={500} height={500} />
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm font-semibold'>
               <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
 
           {/* cart-3 */}
-          <div className='mb-4 ns:mb-1 ns:w-4/12'>
+          <div className='mb-4 ns:mb-1'>
             <Image className="w-full" src='/images/boot3.png' alt='photo' width={500} height={500} />
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm font-semibold'>
               <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
