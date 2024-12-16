@@ -47,7 +47,7 @@ export default function Home() {
           <div className='mb-4 ns:mb-1'>
             <Image className="" src='/images/boot1.png' alt='photo' width={500} height={500} />
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm  font-semibold'>
-              <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
+              <div className='flex flex-col sm:flex-row sm:justify-between'>
                 <p>Nike Air Max 97 SE</p>
                 <p>Rs. 16995</p>
               </div>
@@ -59,7 +59,7 @@ export default function Home() {
           <div className='mb-4 ns:mb-1'>
             <Image className="" src='/images/boot2.png' alt='photo' width={500} height={500} />
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm font-semibold'>
-              <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
+              <div className='flex flex-col sm:flex-row sm:justify-between'>
                 <p>Nike Air Max 97 SE</p>
                 <p>Rs. 16995</p>
               </div>
@@ -71,7 +71,7 @@ export default function Home() {
           <div className='mb-4 ns:mb-1'>
             <Image className="" src='/images/boot3.png' alt='photo' width={500} height={500}/>
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm font-semibold'>
-              <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
+              <div className='flex flex-col sm:flex-row sm:justify-between'>
                 <p>Nike Air Max 97 SE</p>
                 <p>Rs. 16995</p>
               </div>
