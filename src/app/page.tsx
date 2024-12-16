@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         {/* 02 */}
-        <div className='grid ns:grid-cols-3 ns:gap-3'>
+        <div className='grid grid-cols-3 gap-1'>
           {/* cart-1 */}
           <div className='mb-4 ns:mb-1'>
             <Image className="" src='/images/boot1.png' alt='photo' width={500} height={500} />
