@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         {/* 02 */}
-        <div className='ns:flex ns:flex-row ns:gap-1'>
+        <div className='ns:grid ns:grid-cols-3 ns:gap-3'>
           {/* cart-1 */}
           <div className='mb-4 ns:mb-1'>
             <Image className="w-full" src='/images/boot1.png' alt='photo' width={500} height={500} />
