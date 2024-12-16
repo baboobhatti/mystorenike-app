@@ -44,7 +44,7 @@ export default function Home() {
         {/* 02 */}
         <div className='ns:flex ns:gap-1'>
           {/* cart-1 */}
-          <div className='w-[96%] mx-auto mb-4 ns:mb-1'>
+          <div className='w-[96%] mx-auto mb-4 ns:mb-1 ns:w-auto ns:ms-0'>
             <Image className="w-full" src='/images/boot1.png' alt='photo' width={500} height={500} />
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm  font-semibold'>
               <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
 
           {/* cart-2 */}
-          <div className='w-[96%] mx-auto mb-4 ns:mb-1'>
+          <div className='w-[96%] mx-auto mb-4 ns:mb-1 ns:w-auto ns:ms-0'>
             <Image className="w-full" src='/images/boot2.png' alt='photo' width={500} height={500} />
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm font-semibold'>
               <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
 
           {/* cart-3 */}
-          <div className='w-[96%] mx-auto mb-4 ns:mb-1'>
+          <div className='w-[96%] mx-auto mb-4 ns:mb-1 ns:w-auto ns:ms-0'>
             <Image className="w-full" src='/images/boot3.png' alt='photo' width={500} height={500} />
             <div className='text-xs ml-1 mt-1 sm:ml-0 md:text-sm font-semibold'>
               <div className='flex justify-between ns:flex-col sm:flex-row sm:justify-between'>
