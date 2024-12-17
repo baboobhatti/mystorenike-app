@@ -6,7 +6,7 @@ import React from 'react'
 const Products = () => {
   return (
     <>
-      <div className='w-[94%] flex mx-auto justify-between items-center my-6'>
+      <div className='w-[94%] flex mx-auto justify-between items-center'>
         <div className='ml-5 font-semibold'><p>New (500)</p></div>
         <div className='flex w-56 justify-between py-2 items-center'>
           <div className='flex gap-x-2 items-center'>
@@ -79,7 +79,7 @@ const Products = () => {
 
         {/* section-2 */}
         <div className='col-span-12 sm:col-span-9'>
-          <div className='grid grid-cols-3 gap-3'>
+          <div className='grid grid-cols-3 gap-3 border-b-2 pb-10 mb-6'>
             <div className=''>
               {/* cart-1 */}
               <Image className="w-full" src='/prdimg/pboot.png' alt='photo' width={500} height={500} />
@@ -246,15 +246,24 @@ const Products = () => {
                 <p className='text-gray-500'>Mens Shoes</p>
               </div>
             </div>
-
-
-
-
-
-
           </div>
           {/*Base  */}
-          <div className='bg-blue-200 h-[30]'></div>
+          <div className='mb-14'>
+            <p className='text-3lg text-gray-800 font-semibold'>Related Categories</p>
+            <div className='mt-4 flex flex-wrap gap-2'>
+            <button className='border-2 px-3 py-1 rounded-full'>Best Products</button>
+            <button className='border-2 px-3 py-1 rounded-full'>Best Shoes</button>
+            <button className='border-2 px-3 py-1 rounded-full'>New Basketball Shoes</button>
+            <button className='border-2 px-3 py-1 rounded-full'>New Football Shoes</button>
+            <button className='border-2 px-3 py-1 rounded-full'>New Mens Shoes</button>
+            <button className='border-2 px-3 py-1 rounded-full'>New Running Shoes</button>
+            <button className='border-2 px-3 py-1 rounded-full'>Best Mens Shoes</button>
+            <button className='border-2 px-3 py-1 rounded-full'>New Jordan Shoes</button>
+            <button className='border-2 px-3 py-1 rounded-full'>Best Womeens Shoes</button>
+            <button className='border-2 px-3 py-1 rounded-full'>Best Gym Shoes</button>                
+            </div>
+
+          </div>
         </div>
       </div>
     </>
