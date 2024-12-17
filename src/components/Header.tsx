@@ -8,14 +8,14 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
   <>
-<div className='xs:bg-slate-50 sm:bg-white flex justify-between px-8 pl-3 md:px-8'>
+<div className='bg-gray-100 sm:bg-white flex justify-between px-8 pl-3 md:px-8'>
 
 <div className=''> <Image src='/images/nikelogo.png' alt='photo' width={80} height={90}/></div>
 {/* 'flex items-center ml-30' */}
 <div className={`${
             isOpen ? "block" : "hidden"
           } absolute top-24 left-0 w-full sm:static sm:w-auto sm:flex sm:items-center`}>
-  <ul className='xs:bg-slate-50 text-center flex gap-3 justify-center flex-col sm:bg-white sm:flex-row sm:gap-6'>
+  <ul className='bg-gray-100 text-center flex gap-3 justify-center flex-col sm:bg-white sm:flex-row sm:gap-6'>
     <li><Link href='/'>New & Featured</Link></li>
     <li><Link href='/'>Men</Link></li>
     <li><Link href='/'>Women</Link></li>
@@ -25,7 +25,7 @@ const Header = () => {
   </ul>
 </div>
 
-<div className='border-2 border-red-100 items-center mr-3 hidden lg:flex '>
+<div className='items-center mr-3 hidden lg:flex '>
   <input className='bg-gray-100 rounded-3xl h-10 mr-4 pl-8 border-none' type='text' placeholder='Search'/>
   <Image className='mr-4' src='/images/newheart.png' alt='photo' width={30} height={30}/>
   <Image src='/images/newbag.png' alt='photo' width={20} height={20}/>

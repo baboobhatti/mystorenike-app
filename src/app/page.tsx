@@ -1,11 +1,9 @@
 
-import Header from "@/components/Header";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <Header />
       {/* Section-1 */}
       <div className='flex flex-col bg-gray-100 justify-center text-xs mt-3 py-2 sm:text-lg'>
         <div className='text-center'><p>Hello Nike App</p></div>

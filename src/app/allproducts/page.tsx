@@ -1,0 +1,265 @@
+
+import Image from 'next/image'
+// import Image from 'next/image'
+import React from 'react'
+
+const Products = () => {
+  return (
+    <>
+      <div className='w-[94%] flex mx-auto justify-between items-center my-6'>
+        <div className='ml-5 font-semibold'><p>New (500)</p></div>
+        <div className='flex w-56 justify-between py-2 items-center'>
+          <div className='flex gap-x-2 items-center'>
+            <p className='font-semibold'>Hide Filter</p>
+            <Image className="h-4" src='/prdimg/filter.jpg' alt='photo' width={18} height={20}/>
+          </div>
+          <div className='flex items-center gap-x-1'>
+          <p className='font-semibold'>Sort by</p>
+          <Image className="" src='/prdimg/sorticon.png' alt='photo' width={20} height={20}/>
+          </div>
+        </div>
+      </div>
+
+      <div className='w-[94%] mx-auto grid grid-cols-12 gap-4'>
+        {/* section-01 */}
+        <div className='hidden col-span-3 pl-5 sm:block'>
+          {/* <div className='col-span-9'> */}
+          <div className=' border-r-8 border-gray-500'>
+            <ul className='flex flex-col gap-1 text-sm border-r-6'>
+              <li>Shoes</li>
+              <li>Sports Bras</li>
+              <li>Taps $ Tshirts</li>
+              <li>Hoodies & Sweatshirts</li>
+              <li>Jackets</li>
+              <li>Shorts</li>
+              <li>Trausers</li>
+              <li>Tracksuits</li>
+              <li>Socks</li>
+              <li>Accessories & Equipments</li>
+            </ul>
+          </div>
+          <div className='mt-6'>
+           <form action="" >
+           <fieldset>
+           
+           <div  className='mt-2 border-t-2'>
+          <legend className='mb-1'>Gender</legend>
+          <div className='text-sm'>
+              <input  className='' type="checkbox"/>
+              <label  className='ml-2'>Man</label>
+            </div>
+            <div className='text-sm'>
+              <input  className='' type="checkbox"/>
+              <label  className='ml-2'>Woman</label>
+            </div>
+            <div className='text-sm'>
+              <input  className='' type="checkbox"/>
+              <label  className='ml-2'>Unisex</label>
+            </div>
+          </div>
+
+          <div  className='mt-2 border-t-2'>
+          <legend className='mb-1'>Kids</legend>
+          <div className='text-sm'>
+              <input  className='' type="checkbox"/>
+              <label  className='ml-2'>Boy</label>
+            </div>
+            <div className='text-sm'>
+              <input  className='' type="checkbox"/>
+              <label  className='ml-2'>Girl</label>
+            </div>
+          </div>   
+          </fieldset>
+           </form>
+          </div>
+          </div>
+        
+
+
+
+        {/* section-2 */}
+        <div className='col-span-12 sm:col-span-9'>
+          <div className='grid grid-cols-3 gap-3'>
+            <div className=''>
+              {/* cart-1 */}
+              <Image className="w-full" src='/prdimg/pboot.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              {/* Cart-2 */}
+              <Image className="w-full" src='/prdimg/pboot1.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pboot2.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pboy.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pboy2.png' alt='photo' width={600} height={600} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pboy3.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pgirl.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pgirl2.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pgirl3.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/ptwins.jpg' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pboot4.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pboot5.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pboot6.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pboot.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+            <div className=''>
+              <Image className="w-full" src='/prdimg/pboot3.png' alt='photo' width={500} height={500} />
+              <div className='text-xs  mt-1 sm:ml-1 md:text-sm  font-semibold'>
+                <div className='flex flex-col'>
+                  <p>Nike Air Max 97 SE</p>
+                  <p>Rs. 16995</p>
+                </div>
+                <p className='text-gray-500'>Mens Shoes</p>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+          {/*Base  */}
+          <div className='bg-blue-200 h-[30]'></div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Products
+

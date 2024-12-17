@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className="bg-slate-50">
+    <nav className="bg-gray-100">
       <div className="flex justify-between items-center h-12 px-4 md:px-10">
         {/* Logo */}
         <div className="ml-2">
@@ -13,24 +13,24 @@ export default function Navbar() {
 
       
         <div
-          className='w-auto bg-slate-50'>
+          className='w-auto'>
           <ul className="flex items-center gap-3 sm:gap-8">
-            <li>
-              <Link href="/">
+            <li className=''>
+              <Link href="../allproducts">
                 Find Store
               </Link>
             </li>
-            <li>
+            <li className='hidden sm:block'>
               <Link href="/projects">
                 Help
               </Link>
             </li>
-            <li>
+            <li className='hidden sm:block'>
               <Link href="/about">
                 Join Us
               </Link>
             </li>
-            <li>
+            <li className='mr-5 sm:mr-0'>
               <Link href="/signin">
                 Sign In
               </Link>
