@@ -10,7 +10,7 @@ import React from 'react'
 //   price:string
 // } 
 
-let detail = [
+const prddetail = [
   {
     id: 1,
     tittle:'Nike Air Force 1',
@@ -198,7 +198,7 @@ const Products = () => {
         <div className='col-span-12 sm:col-span-9'>
           <div className='grid grid-cols-3 gap-3 border-b-2 pb-10 mb-6'>
             {
-               detail.map((imgdata) => {
+               prddetail.map((imgdata) => {
                         return(
                           <div key={imgdata.id}>
                           {/* cart-1 */}

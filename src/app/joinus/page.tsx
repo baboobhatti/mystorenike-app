@@ -37,7 +37,7 @@ const login = () => {
           <label className='block w-[280] mx-auto my-4 '><input  className='' type="checkbox"/> Sign Up for emails to get updates</label>
             
 
-            <p className='w-[280] text-sm mx-auto mt-5'>By logging in, you agree to Nike's Privacy Policy and Terms of Use.</p>
+            <p className='w-[280] text-sm mx-auto mt-5'>By logging in you agree to Nikes Privacy Policy and Terms of Use.</p>
             <button className=' w-[240] sm:w-[280] bg-black text-white mx-auto block rounded-full py-2 mt-6' type='button'>JOIN US</button>
             <p className='w-[280] mx-auto text-sm mt-2 text-center'>Already a Member? <Link className='ml-3 underline' href="/login">Sign In</Link></p>
         </form>

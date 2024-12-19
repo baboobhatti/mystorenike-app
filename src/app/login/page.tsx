@@ -27,7 +27,7 @@ const login = () => {
                 </div>
             </div>
 
-            <p className='w-[280] text-sm mx-auto mt-5'>By logging in, you agree to Nike's Privacy Policy and Terms of Use.</p>
+            <p className='w-[280] text-sm mx-auto mt-5'>By logging in you agree to Nikes Privacy Policy and Terms of Use.</p>
             <button className=' w-[240] sm:w-[280] bg-black text-white mx-auto block rounded-full py-2 mt-6' type='button'>SIGN IN</button>
             <p className='w-[280] mx-auto text-sm mt-2 text-center'>Not a Member? <Link className='ml-3 underline' href="/joinus">Join US</Link></p>
         </form>

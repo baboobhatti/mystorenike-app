@@ -1,25 +1,30 @@
-'use client'
-import Link from 'next/link'
+'use client';
+import Link from 'next/link';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 
-// interface Product{
-//   name:string,
-// }
-let detailpd = [
+interface Product {
+  id: number;
+  tittle: string;
+  detail: string;
+  price: number;
+  imgurl: string;
+}
+
+const pdetail: Product[] = [
   {
     id: 1,
-    tittle:'Nike Court Legacy Lift',
+    tittle: 'Nike Court Legacy Lift',
     detail:'Turn style on its head with this crafted take on the Air Jordan 1 Mid. Its inside out-inspired construction, including unique layering and exposed foam accents, ups the ante on this timeless Jordan Brand silhouet.',
     price: 3999,
-    imgurl:'/prdimg/image1.png'
+    imgurl: '/prdimg/image1.png',
   },
   {
     id: 2,
-    tittle:'Nike Air Force 1 Mid',
+    tittle: 'Nike Air Force 1 Mid',
     detail:'Turn style on its head with this crafted take on the Air Jordan 1 Mid. Its inside out-inspired construction, including unique layering and exposed foam accents, ups the ante on this timeless Jordan Brand silhouet.',
     price: 3999,
-    imgurl:'/prdimg/image2.png'
+    imgurl: '/prdimg/image2.png',
   },
   {
     id: 3,
@@ -111,36 +116,41 @@ let detailpd = [
     detail:'Turn style on its head with this crafted take on the Air Jordan 1 Mid. Its inside out-inspired construction, including unique layering and exposed foam accents, ups the ante on this timeless Jordan Brand silhouet.',
     price: 3999,
     imgurl:'/prdimg/image15.jpg'
-  },
-]
-const page = () => {
-  const data = useParams();
-  const id = data.id;
-  const cart = detailpd.find((data) => data.id === Number(id))
-  if(!cart){
-    return <h1>Product not found</h1>
   }
-  
+];
+
+const Dynamic = () => {
+  const params = useParams();
+  const id = Number(params.id); // Convert id to a number
+  const cart = pdetail.find((data) => data.id === id);
+
+  if (!cart) {
+    return <h1>Product not found</h1>; // Handle case where product doesn't exist
+  }
+
   return (
-    <>
-    <div className='grid grid-cols-12 w-[90%]  sm:grid-cols-2 gap-3 sm:gap-6 sm:w-[610] mx-auto mt-6 sm:mt-20 lg:mt-7 mb-20 md:w-[700] lg:w-[900]'>
-      {/* left */}
-      <div className='col-span-12 sm:col-auto'>
-      <Image className='w-full' src={cart.imgurl} alt='photo' width={1000} height={1000}/>   
+    <div className="grid grid-cols-12 w-[90%] sm:grid-cols-2 gap-3 sm:gap-6 sm:w-[610] mx-auto mt-6 sm:mt-20 lg:mt-7 mb-20 md:w-[700] lg:w-[900]">
+      {/* Left */}
+      <div className="col-span-12 sm:col-auto">
+        <Image className="w-full" src={cart.imgurl} alt={cart.tittle} width={1000} height={1000} />
       </div>
 
-      {/* right */}
-      <div className='col-span-12 sm:col-auto'>
-        <div className='w-[260] mt-4 md:mt-14'>
-       <h1 className='text-2xl font-semibold'>{cart.tittle}</h1>
-       <p className='text-sm text-gray-700 mt-6'>{cart.detail}</p>
-       <h2 className='text-xl font-semibold mt-4 mb-6'>{`Rs. ${cart.price}`}</h2>
-        <Link className='bg-black text-white px-4 py-2 rounded-full' href='/#'><button type='button'>Add to Cart</button></Link>
-       </div>
+      {/* Right */}
+      <div className="col-span-12 sm:col-auto">
+        <div className="w-[260] mt-4 md:mt-14">
+          <h1 className="text-2xl font-semibold">{cart.tittle}</h1>
+          <p className="text-sm text-gray-700 mt-6">{cart.detail}</p>
+          <h2 className="text-xl font-semibold mt-4 mb-6">{`Rs. ${cart.price}`}</h2>
+          <Link href="/#">
+            <button className="bg-black text-white px-4 py-2 rounded-full" type="button">
+              Add to Cart
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default page
+export default Dynamic;
+
