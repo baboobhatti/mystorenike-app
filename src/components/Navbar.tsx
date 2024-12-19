@@ -21,17 +21,17 @@ export default function Navbar() {
               </Link>
             </li>
             <li className='hidden sm:block'>
-              <Link href="/projects">
+              <Link href="/">
                 Help
               </Link>
             </li>
             <li className='hidden sm:block'>
-              <Link href="/about">
+              <Link href="../joinus">
                 Join Us
               </Link>
             </li>
             <li className='mr-5 sm:mr-0'>
-              <Link href="/signin">
+              <Link href="../login">
                 Sign In
               </Link>
             </li>
