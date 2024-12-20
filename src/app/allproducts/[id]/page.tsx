@@ -129,15 +129,15 @@ const Dynamic = () => {
   }
 
   return (
-    <div className="grid grid-cols-12 w-[90%] sm:grid-cols-2 gap-3 sm:gap-6 sm:w-[610] mx-auto mt-6 sm:mt-20 lg:mt-7 mb-20 md:w-[700] lg:w-[900]">
+    <div className="flex flex-col items-center md:justify-center md:flex-row mt-10 mb-24 gap-8">
       {/* Left */}
-      <div className="col-span-12 sm:col-auto">
-        <Image className="w-full" src={cart.imgurl} alt={cart.tittle} width={1000} height={1000} />
+      <div className="">
+        <Image className="w-[400] sm:[450]" src={cart.imgurl} alt={cart.tittle} width={440} height={440} />
       </div>
 
       {/* Right */}
-      <div className="col-span-12 sm:col-auto">
-        <div className="w-[260] mt-4 md:mt-14">
+      <div className="">
+        <div className="w-72 md:w-64 border-2 sm:mt-7 md:mt-14">
           <h1 className="text-2xl font-semibold">{cart.tittle}</h1>
           <p className="text-sm text-gray-700 mt-6">{cart.detail}</p>
           <h2 className="text-xl font-semibold mt-4 mb-6">{`Rs. ${cart.price}`}</h2>
