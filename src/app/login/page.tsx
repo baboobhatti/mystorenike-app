@@ -5,7 +5,7 @@ import React from 'react'
 const login = () => {
   return (
       <>
-    <div className='w-[98%] sm:w-[380] h-[490] mx-auto mb-8 mt-6'>
+    <div className='border-2 mb-8 mt-6'>
       <div className=''>
         <div className='flex justify-center items-center'><Image src='/images/nikelogo.png' alt='photo' width={80} height={80}/>
         </div>
@@ -13,22 +13,13 @@ const login = () => {
      </div>
 
       <div>
-        <form className='mt-4' action="">
+        <form className='mt-4 mx-auto border-2 border-green-300 w-[310]' action="">
             
-            <input className='block border-2 w-[280] pl-4 py-1 mx-auto mb-4 rounded' type="email" placeholder='Email' />
-            <input className='block border-2 w-[280] pl-4 py-1 mx-auto rounded' type="password" placeholder='Password' />
-            <div className=' flex justify-between w-[280] mx-auto text-xs mt-3 items-center'>
-                <div className='flex items-center'>
-                <input  className='' type="checkbox"/>
-                <label  className='ml-2'>Keep me signed in</label>
-                </div>
-                <div className=''>
-                    <p>Forgetten password?</p>
-                </div>
-            </div>
-
-            <p className='w-[280] text-sm mx-auto mt-5'>By logging in you agree to Nikes Privacy Policy and Terms of Use.</p>
-            <button className=' w-[240] sm:w-[280] bg-black text-white mx-auto block rounded-full py-2 mt-6' type='button'>SIGN IN</button>
+            <input className='block border-2 w-[300] pl-2 py-1 mx-auto mb-4 rounded' type="email" placeholder='Email' />
+            <input className='block border-2 w-[300] pl-2 py-1 mx-auto rounded mb-3' type="password" placeholder='Password' />
+            <label  className='mx-auto flex w-[300] border-2 items-center text-xs gap-1 '><input  className='' type="checkbox"/> Keep me signed in <Link className='ml-16' href='/#'>Forgotten password?</Link></label>
+            <p className='w-[260] text-sm ml-6 mt-5'>By logging in you agree to Nikes Privacy Policy and Terms of Use.</p>
+            <button className='w-[200] sm:w-[250] bg-black text-white mx-auto block rounded-full py-2 mt-6' type='button'>SIGN IN</button>
             <p className='w-[280] mx-auto text-sm mt-2 text-center'>Not a Member? <Link className='ml-3 underline' href="/joinus">Join US</Link></p>
         </form>
       </div>

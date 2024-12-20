@@ -123,7 +123,7 @@ const Dynamic = () => {
   const params = useParams();
   const id = Number(params.id); // Convert id to a number
   const cart = pdetail.find((data) => data.id === id);
-
+  
   if (!cart) {
     return <h1>Product not found</h1>; // Handle case where product doesn't exist
   }
